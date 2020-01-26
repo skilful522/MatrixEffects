@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+
+.output {
+    position: absolute;
+    font-family: Monospaced;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: 	#008001;
+    opacity: 0.8;
+    font-size: 64px;
+}
