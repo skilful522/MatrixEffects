@@ -18,18 +18,15 @@ function fallCode() {
     context.fillStyle = "#0f0";
 
     yPositions.forEach((y, index) => {
-        const text = 'Dmitriy is under 👠';
-        const x = index * 50;
+        const text = String.fromCharCode(Math.random() * 128);
+        const x = index * 20;
 
         context.fillText(text, x, y);
-        if (y > 200 + Math.random() * 10000) {
+        if (y > 100 + Math.random() * 10000) {
             yPositions[index] = 0;
         } else {
             yPositions[index] = y + 20;
         }
-    })
-}
-
-
+    })}
 
 setInterval(fallCode, 90);
